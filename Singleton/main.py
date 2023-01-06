@@ -19,7 +19,7 @@ class Singleton:
 if __name__ == '__main__':
     """
     Note that, by instantiating class Singleton(), first __new__() method will
-    be called the __new__ will call __init__ 
+    be called the __new__ will call __init__
     """
     s1 = Singleton()
     s2 = Singleton()

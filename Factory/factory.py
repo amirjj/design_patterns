@@ -54,7 +54,7 @@ class Game:
 
 if __name__ == "__main__":
     """
-    This part of code you just run move() method without knowing that the 
+    This part of code you just run move() method without knowing that the
     player is Human or Computer. Hiding complexity like this called Factory.
     different types of Players but all have move method.
     """

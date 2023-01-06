@@ -29,6 +29,6 @@ if __name__ == "__main__":
     print(s1 == s2 == s3)
 
 """
-Its not correct to inherete from a Singleton class expecting childs to be 
+Its not correct to inherete from a Singleton class expecting childs to be
 singletpn. becuase all childs will have same ID. doesnt work as expected.
 """

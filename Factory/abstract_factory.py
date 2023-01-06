@@ -57,9 +57,8 @@ class GiftCardPrice:
         self.max_price = gift_card.max_price
 
     def show(self):
-        print(
-            f'GiftCard Min Price: {self.min_price}, Max Price: {self.max_price}'
-        )
+        print(f'GiftCard Min Price: {self.min_price}, '
+              f'Max Price: {self.max_price}')
 
 
 class GiftCard(ProductBase):
@@ -79,7 +78,7 @@ class GiftCard(ProductBase):
 
 if __name__ == '__main__':
     """
-    Showing products price and detail without knowing what is the product. 
+    Showing products price and detail without knowing what is the product.
     complexities been hidden.
     """
     p1 = Rug('Kashan', 3000000)
@@ -91,4 +90,3 @@ if __name__ == '__main__':
     for p in products:
         p.price.show()
         p.detail.show()
-

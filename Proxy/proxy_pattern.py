@@ -107,4 +107,3 @@ if __name__ == "__main__":
     u1 = User()
     print(purchase_uae.checkout(user))
     print(purchase_iran.checkout(u1))
-

@@ -7,9 +7,6 @@ decorator is callable, with function as input and output.
 """
 
 
-from datetime import datetime
-
-
 COUNTRIES = ['Iran', 'UAE']
 VAT = {"Iran": 9, "UAE": 15}
 

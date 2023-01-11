@@ -15,6 +15,26 @@ class Singleton:
             cls.instance = super(*args, **kwargs)
         return cls.instance
 
+    def test(self):
+        print("test method")
+
+
+"""
+Other way specified in Internet 
+"""
+
+
+class SingletonNew:
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(SingletonNew, cls).__new__(cls)
+        return cls._instance
+
+    def test(self):
+        print("test method")
+
 
 if __name__ == '__main__':
     """
@@ -30,3 +50,10 @@ if __name__ == '__main__':
     print(id(s3))
 
     print(s1 == s2 == s3)
+    # s1.test()
+
+    n1 = SingletonNew()
+    n2 = SingletonNew()
+    n1.test()
+
+    print(n1 == n2)
